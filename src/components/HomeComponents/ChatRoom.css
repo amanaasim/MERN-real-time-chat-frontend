@@ -1,0 +1,213 @@
+/* General background and theme color */
+.bg-lightblue {
+  color: #00c584;
+  /* Highlight text in light blue */
+}
+
+/* Logout button styling */
+.logout-button {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background-color: #00c584;
+  /* Green color for logout button */
+  border: 1px solid #ffffff;
+  padding: 0px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 40px;
+}
+
+.logout-button:hover {
+  background-color: #038358;
+  /* Light green on hover */
+  color: white;
+  /* Text color changes to white */
+  border-color: #ffffff;
+}
+
+.logout-button:focus {
+  outline: none;
+  /* Remove outline when focused */
+  box-shadow: 0 0 0 2px rgba(12, 91, 65, 0.4);
+  /* Focus shadow */
+}
+
+/* Font size for small text */
+.fs-12 {
+  font-size: 12px;
+}
+
+/* - list styling */
+.users-list {
+  padding: 12px;
+  background-color: #f8f9fa;
+  /* Light background color */
+  border: 1px solid #ddd;
+  /* Light border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Space between users */
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.users-list:hover {
+  background-color: #e2e6ea;
+  /* Hover effect */
+}
+
+.users-list strong {
+  font-size: 16px;
+  /* Larger font size for user name */
+  color: #009E6A;
+  /* Color for user name */
+  margin-right: 10px;
+}
+
+.users-list .mobile {
+  font-size: 14px;
+  /* Mobile number font size */
+  color: #6c757d;
+  /* Gray color for mobile */
+}
+
+.users-list.active {
+  background-color: #d4edda;
+  /* Highlight selected user */
+  border-color: #28a745;
+  /* Green border color */
+}
+
+/* Footer styling - fixed at bottom */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  color: #009E6A;
+}
+
+/* Layout for chat body */
+.chat-body {
+  display: flex;
+  flex-direction: row;
+  height: calc(75vh);
+  /* padding: 20px; */
+  /* margin-bottom: 60px; */
+  overflow: hidden;
+}
+
+/* User list takes 25% of the space */
+.user-list {
+  flex: 0 0 25%;
+  min-width: 250px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  height: 100%;
+}
+
+/* Chat box takes the remaining space */
+.chat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 15px;
+  /* border-radius: 8px; */
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Prevent the chat box from overflowing */
+  height: 100%;
+}
+
+/* Styling the messages container */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  /* Scrollable only for messages */
+  margin-bottom: 10px;
+  padding-right: 10px;
+  /* Add some space on the right for better UX */
+}
+
+.messages .sent-message {
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  text-align: right;
+}
+
+.messages .received-message {
+  background-color: #e2e6ea;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Input box and send button at the bottom */
+.message-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 10px;
+  /* Space between messages and input box */
+}
+
+.message-input-container input {
+  width: 85%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.message-input-container button {
+  width: 15%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #009E6A;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.message-input-container button:hover {
+  background-color: #83ceb5;
+}
+
+.dashboard-footer {
+  border-top: 1px solid lightgrey;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.chat-timeStamp {
+  color: #494949;
+  font-size: 12px;
+  font-family: math;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.logout-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+}
